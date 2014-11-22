@@ -1,4 +1,0 @@
-PortfolioApp
-============
-
-My Portfolio App
