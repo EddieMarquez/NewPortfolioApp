@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<widget xmlns = "http://www.w3.org/ns/widgets"
+	<widget xmlns = "http://apache.org/cordova/ns/plugins/1.0"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		id        = "com.ajsoftware.lynda.samoca"
 		versionCode="1"
@@ -52,6 +52,9 @@ Edward Marquez
 		<gap:plugin name="org.apache.cordova.inappbrowser"  />
 		<gap:plugin name="org.apache.cordova.network-information"  />
 		<gap:plugin name="org.apache.cordova.splashscreen"  />
+		<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
+		<gap:plugin name="nl.x-services.plugins.socialsharing" />
+		<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.0" />
 
 		<icon src="res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57" />
 		<icon src="res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
