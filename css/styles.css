@@ -3,18 +3,17 @@ body{
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; 
     min-height:100%; 
     padding:0px; 
-    background-image:url('../images/14916946.jpg');
+    background-image:url('../images/LosAngeles_BG.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position:center center; 
     background-color: #000; 
 }
-
 header{
     background-color: #6CCEEC;
     color: #fff;
     width: 100%;
-    height: 80px;
+    height: 30px;
     padding: 10px;
     margin-bottom:-45px; 
     margin-top: -10px;
@@ -25,183 +24,45 @@ header{
     position: fixed;
 }
 header img{
-
     margin: 0 15px 0 auto;
     float: right;
     z-index: 10;
-    width: 130px
-
-   
+    width: 130px 
 }
- h1{
+h1{
         text-align: center;
         font-size: 48px;
         font-family: LobsterTwo;
         margin-top: auto;
         margin-right: 20px;
         height: 60px;
-    }
+        color: #fff;
+}
 h2{
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
         font-family: sans-serif;
         margin: 0 auto 10px;
-        width: 100px;
+        width: 200px;
+        color: #fff;
 
-    }
-#container {
-    width: 50%;
-    margin: 100px auto;
-    background-color: #fff;
-    padding: 10px;
 }
-
- #largeLogo{
-    width: 80%;
-    margin-left: 50px;
-    margin-right: auto;
- }
- #web-gallery{
-    width: 600px;
-    text-align: center;
-    margin: 0 auto;
-    
- }
-  #web-gallery img{
-    width: 200px;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 25px;
- }
-  #web-gallery a{
-    text-decoration: none;
-    color: #000;
- }
-
- #web-gallery a:hover{
-    text-decoration: none;
-    color: #6CCEEC;
- }
- 
-@media screen and (max-width: 900px){
-    header {
-        font-size: 56px;
-        height: 80px;
-        position: fixed;
-        
-    }
-    
-    div {
-        margin-top: -5px;
-        padding-bottom: 25px;
-        margin-right: 80px;
-    }
-    h1{
-        text-align: center;
-        font-size: 38px;
-        margin: 0 auto;
-    }
-    #largeLogo{
+#masthead{
     width: 100%;
-    margin: 0 auto;
- }
- #container {
-    width: 70%;
-    margin: 100px auto;
-    background-color: #fff;
-    padding: 10px;
-}
- #web-gallery{
-    width: 400px;
+    margin: 100px auto 0;
     text-align: center;
-    margin: 0 auto;
-    
- }
-  #web-gallery img{
-    width: 150px;
+} 
+#largeLogo{
+    width: 40%;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 25px;
- }
-   
-
-
 }
-@media screen and (max-width: 600px){
-    #container {
-    width: 75%;
-    margin: 100px auto;
-    background-color: #fff;
-    padding: 10px;
+#container {
+    width: 700px;
+    margin: 50px auto;
+    /*background-color: #fff;*/
 }
-    header {
-        font-size: 32px;
-        height: 60px;
-        width: 110%;
-        
-    }
-    header img{
-
-    margin: 0 65px 0 auto;
-    float: right;
-    z-index: 10;
-    width: 100px  
-	}
-    div {
-        margin-top: 0px;
-        margin-right: 100px;
-        padding-bottom: 0px;
-    }
-
-     h1{
-    
-        font-size: 30px;
-        margin: 0 auto;
-        text-align: center
-        ;
-
-    }
-    p{
-        text-align: justify;
-        font-size: 14px;
-        margin: 0 auto;
-        width: 80%
-        ;
-
-    }
-    #web-gallery{
-    width: 300px;
-    text-align: center;
-    margin: 0 auto;
-    
- }
-    
-#web-gallery img{
-    width: 100px;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 25px;
- }
-
-}
-
-
-
-.panel {
-    position: fixed;
-    left: -10.625em; /*or width of your navigation panel*/
-    width: 10.625em; /*should match the above value*/
-    z-index: 420;
-    background: #101820;
-}
-
-/*  
-    Demo Specific Styles
-    ====================
-*/
-
-
-
+/*The Button*/
 .wrap {
     position: relative;
     max-width: 100%;
@@ -209,81 +70,398 @@ h2{
     padding: 20px;
     z-index: 420;
 }
+a.menu-link{
+    font-size: 24px;
+    position: fixed;
+    margin-top: -25px;
+    padding: 3px;
+    color: black;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 3px; 
+    border-color: #000;
+    opacity: 1;
 
-  
-}
-
-.panel a {
+} 
+a.menu-link:hover{
+    font-size: 24px;
+    position: fixed;
+    margin-top: -25px;
+    padding: 3px;
+    color: black;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 3px; 
+    border-color: #fff;
     color: #fff;
-}
-
+} 
 .menu {
     width: 20px;
     height: 20px;
     z-index: 420;
     position: fixed;
 }
-
-
-
-
-ul {
-   
+nav#menu.panel {
+    position: fixed;
+    left: -10.625em; 
+    width: 10.625em; 
+    z-index: 420;
+    background: #101820;
+}
+.panel a {
+    color: #fff;
+}
+ul {  
     width: 90px;
     height: 100%;
-    margin-left: 0px; 
-    z-index: 3;
-    list-style-type: none; 
+    margin-left: 0px;
+    list-style: none; 
+    z-index: 3; 
 }
-
 li img{
     height: 92px;
     width: 92px;
+    opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+
+}
+li img:hover{
+    height: 92px;
+    width: 92px;
+    opacity: 0.7;
 }
 
+table{
+    width: 620px;
+    padding-top: 75px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
+    width: 150px;
+    padding: 5px;
+}
+
+
+#web-gallery{
+    width: 100%;
+    height: 620px;
+    text-align: center;
+    margin: 0 auto;
+    background-image:url('../images/imac.png');
+    background-repeat: no-repeat;
+    /*background-position:center center;*/
+    background-size: 700px 
+    
+}
+#web-gallery img{
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+#web-gallery img:hover{
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.5;
+
+}
+#web-gallery a{
+    text-decoration: none;
+    color: #000;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+#web-gallery a:hover{
+    text-decoration: none;
+    color: #6CCEEC;
+}
+
+
+#contact_form{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 100px auto;
+    background-color: #6CCEEC;
+    text-align: left;
+    width: 400px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+div.row{
+    margin: 10px auto 10px auto;
+    padding: 5px;
+}
+
+#submit_button{
+    margin-left:8px; 
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 5px;
+    background-color: #6CCEEC;
+    color: #fff;
+}
+#submit_button:hover{
+    margin-left:8px; 
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #6CCEEC;
+}
+#shareButton {
+    
+    margin: -60px auto 100px auto;
+    width: 180px;
+}
+#shareButton a{
+    font-size: 48px;
+    margin: 0 auto;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+#shareButton a:hover{
+    font-size: 48px;
+    margin: 0 auto;
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+ footer{
+    background-color: #6CCEEC;
+    color: #fff;
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    margin: 0 0 0 -10px;
+    font-family: LobsterTwo;
+    z-index: 10;
+    box-shadow: 5px -5px 35px #000;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+}
+
+ /********************************** 
+            Tablet Size Begin
+  ***********************************/
 @media screen and (max-width: 900px){
+    header{
+        background-color: #6CCEEC;
+        color: #fff;
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        margin-bottom:-45px; 
+        margin-top: -10px;
+        margin-left: -10px;
+        font-family: LobsterTwo;
+        z-index: 10;
+        box-shadow: 5px -5px 35px #000;
+        position: fixed;
+        font-size: 56px;
+    }
+    #masthead{
+        width: 100%;
+        margin: 100px auto 0;
+        text-align: center;
+    } 
+    #largeLogo{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+     }
+    div {
+        margin-top: -5px;
+        padding-bottom: 25px;
+        margin-right: 80px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 38px;
+        margin: 0 auto;
+    }
+    #container {
+        width: 700px;
+        margin: 0px auto;
+        padding: 10px;
+    }
+    table{
+        width: 550px;
+        padding-top: 50px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    td {
+        width: 150px;
+        padding: 5px;
+    }
+    #web-gallery{
+        width: 100%;
+        height: 620px;
+        text-align: center;
+        margin: 0 auto;
+        background-size: 700px 
+     }
+    #web-gallery img{
+        width: 150px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 25px;
+     }
     nav#menu.panel li img {
         width: 80px;
         height: 80px;
         margin: auto;
     }
-}
-@media screen and (max-width: 600px){
-    nav#menu.panel li img {
-        width: 60px;
-        height: 60px;
+    a.menu-link{
+        z-index: 100;
+        font-size: 18px;
+        text-decoration: none;
+        margin-top: -20px;
     }
+    a.menu-link:hover{
+        font-size: 18px;
+        color: #fff;
+        margin-top: -20px;
+    } 
 }
-
-
-/*The Button*/
-a.menu-link{
-    font-size: 58px;
-    position: fixed;
-    margin-top: -20px;
-    color: black;
-    text-decoration: none;
-}  
-
-@media screen and (max-width: 900px){
-
-    a.menu-link{
-        z-index: 100;
-        font-size: 48px;
-        text-decoration: none;
-        margin-top: -15px;
-
-
-}
-
+ /********************************** 
+            Tablet Size End
+  ***********************************/
+  /********************************** 
+            Mobile Size Begin
+  ***********************************/
 @media screen and (max-width: 600px){
+    header {
+        font-size: 32px;
+        height: 36px;
+        width: 110%;    
+    }
+    header img{
+        margin: 0 65px 0 auto;
+        float: right;
+        z-index: 10;
+        width: 100px  
+    }
+    #masthead{
+        width: 100%;
+        margin: 100px auto 0;
+        text-align: center;
+    } 
+    #largeLogo{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+     }
+    div {
+       margin: 0 auto;
+        padding-bottom: 0px;
+    }
+    h1{
+    
+        font-size: 30px;
+        margin: 50px auto 0;
+        text-align: center;
+    }
+    p{
+        text-align: justify;
+        font-size: 14px;
+        margin: 0 auto;
+        width: 80%;
 
+    }
+    #container {
+        width: 350px;
+        margin: -30px auto 0;
+        padding: 10px;
+    }
+    table{
+        width: 315px;
+        padding-top: 25px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    td {
+        height: 65px;
+        width: 150px;
+        padding: 0px;
+    }
+    #web-gallery{
+        width: 100%;
+        height: 350px;
+        text-align: center;
+        margin: 0 auto;
+        background-size: 350px 
+     }
+    #web-gallery img{
+        width: 80px;
+        height: 40px;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 1;
+       transition: opacity .25s ease-in-out;
+       -moz-transition: opacity .25s ease-in-out;
+       -webkit-transition: opacity .25s ease-in-out;
+    }
+    #web-gallery img:hover{
+        width: 80px;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 0.5;
+
+    }
+    nav#menu.panel li img {
+        width: 100px;
+        height: 100px;
+    }
     a.menu-link{
         z-index: 100;
-        font-size: 32px;
+        font-size: 18px;
         text-decoration: none;
-        margin-top: -10px;
-
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+    a.menu-link:hover{
+        font-size: 18px;
+        color: #fff;
+        margin-left: -20px;
+    }
+    .panel {
+    position: fixed;
+    left: -6.625em; 
+    width: 6.625em; 
+    z-index: 420;
+    background: #101820;
+    } 
 
 }
-
+ /********************************** 
+            Mobile Size End
+  ***********************************/

@@ -10,6 +10,9 @@
         <meta name="viewport" content="width=device-width">
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/styles.css">
+        <script type="text/javascript" src="SocialSharing.js"></script>
+       
+
     </head>
     <body>
 
@@ -29,32 +32,43 @@
     </nav>
 
         
-    <div class="wrap push">
-        <a href="#menu" class="menu-link">&#9776;</a>
+   <div class="wrap push">
+        <a href="#menu" class="menu-link"><!-- &#9776; -->NAVIGATION</a>
     </div>
 
-     <div id="container";>
-        <div style="width:100%;">
-           <img id="largeLogo" src="images/logo_large.png"> 
-        </div>
+    <div id="container";>
+        
+        <div id="masthead"><img id="largeLogo" src="images/logo_large.png"></div>
+        
         
         <h1>Contact</h1>
-            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-                <div class="row">
-                    <label for="name">Your name:</label><br />
-                    <input id="name" class="input" name="name" type="text" value="" size="50" /><br />
-                </div>
-                <div class="row">
-                    <label for="email">Your email:</label><br />
-                    <input id="email" class="input" name="email" type="text" value="" size="50" /><br />
-                </div>
-                <div class="row">
-                    <label for="message">Your message:</label><br />
-                    <textarea id="message" class="input" name="message" rows="7" cols="80"></textarea><br />
-                </div>
-                <input id="submit_button" type="submit" value="Send email" />
-            </form>                     
-    </div>
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+            <div class="row">
+                <label for="name">NAME:</label><br />
+                <input id="name" class="input" name="name" type="text" value="" size="50" /><br />
+            </div>
+            <div class="row">
+                <label for="email">EMAIL:</label><br />
+                <input id="email" class="input" name="email" type="text" value="" size="50" /><br />
+            </div>
+            <div class="row">
+                <label for="message">MESSAGE:</label><br />
+                <textarea id="message" class="input" name="message" rows="7" cols="50"></textarea><br />
+            </div>
+            <input id="submit_button" type="submit" value="HIT ME UP" />
+        </form>                     
+
+        <div id="shareButton"><a href="">SHARE</a></div>
+        <button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via Facebook (with errcallback)</button>
+    </div>                  
+    
+
+     <footer>
+        <div>
+            © <?php echo date("Y"); ?> Ghost Graffics | All Rights Reserved
+        </div>
+    </footer>
+
 
 <!-- //nav slider  script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>     
